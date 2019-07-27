@@ -6,7 +6,7 @@
         <h1 class="mb-3 font-weight-normal"><b>Sis</b>Compras</h1>
         <div class="form-group">
             <label for="inputEmail" class="sr-only">Email</label>
-            <input type="email" class="form-control {{ $errors->has('email') ? ' Invalido' : '' }} " placeholder="Email" name="email" value="{{ old('email') }}" required autofocus>
+            <input type="email" class="form-control son-form-field  {{ $errors->has('email') ? ' Invalido' : '' }} " placeholder="Email" name="email" value="{{ old('email') }}" required autofocus>
             @if ($errors->has('email'))
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('email') }}</strong>
@@ -15,7 +15,7 @@
         </div>
         <div class="form-group">
             <label for="inputPassword" class="sr-only">Senha</label>
-            <input type="password" class="form-control {{ $errors->has('password') ? ' Invalido' : '' }}" placeholder="Senha" name="password" required>
+            <input type="password" class="son-form-field form-control {{ $errors->has('password') ? ' Invalido' : '' }}" placeholder="Senha" name="password" required>
             @if ($errors->has('password'))
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $errors->first('password') }}</strong>
