@@ -43,7 +43,7 @@
 
         <p class="mt-5 mb-3 text-muted">Todos os Direitos Reservados &copy;<br>
         {{date('Y')}}</p>
-        <a href="http://jos3duardo.xyz" target="_blank">Siscompras</a>
+        <a href="http://jos3duardo.xyz" target="_blank">Siscompras || Jos3duardo</a>
     </form>
 </div>
 </body>
