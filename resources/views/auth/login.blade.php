@@ -40,8 +40,9 @@
             {{ __('Permanecer Conectado') }}
         </div>
         <button type="submit" class="btn btn-lg btn-dark btn-block" >Entrar</button>
+        <a href="{{route('register')}}" type="submit" class="btn btn-lg btn-warning btn-block" >Cadastrar-se</a>
 
-        <p class="mt-5 mb-3 text-muted">Todos os Direitos Reservados &copy;<br>
+        <p class="mt-5 mb-3 text-muted">&copy; Todos os Direitos Reservados <br>
         {{date('Y')}}</p>
         <a href="http://jos3duardo.xyz" target="_blank">Siscompras || Jos3duardo</a>
     </form>
