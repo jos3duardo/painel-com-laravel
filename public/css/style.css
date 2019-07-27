@@ -19,7 +19,6 @@ body{
     -moz-transition: margin .25s ease-out;
     -o-transition: margin 225s ease-out;
     transition: margin .25s ease-out;
-
     background-color: #3e4856ff;
 
 }
@@ -30,8 +29,6 @@ body{
     font-size: 17px;
     font-family: 'Nunito', sans-serif;
 }
-
-
 
 #sidebar-wrapper .sidebar-heading img{
     width: 30px;
@@ -88,6 +85,11 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
     padding-left: 1.2%;
+}
+.btn{
+    border-radius: 9px !important;
+    border-width: 1px !important;
+
 }
 
 .son-form-field{

@@ -16,8 +16,18 @@
 </head>
 <body class="text-center">
     <div class="container">
+        <img class="mb-1" src="/img/logo.png" alt="" width="72" height="72">
+        <h1 class="mb-1 font-weight-normal"><b>Sis</b>Compras</h1>
+
         @yield('content')
+
+        <p class="mt-3 mb-1 text-muted">
+            &copy; Todos os Direitos Reservados
+            {{date('Y')}}
+        </p>
+        <a href="http://jos3duardo.xyz" target="_blank">Siscompras || Jos3duardo</a>
     </div>
+
 </body>
 </html>
 
