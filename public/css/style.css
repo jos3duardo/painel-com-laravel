@@ -190,3 +190,10 @@ body{
 }
 /************************************/
 
+.group-mobile{
+    font-family: 'Nunito', sans-serif;
+    margin-right: 15px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}

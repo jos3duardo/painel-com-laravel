@@ -16,4 +16,8 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::prefix('category')->group(function () {
     Route::get('/', 'CategoryController@index')->name('category');
     Route::post('/', 'CategoryController@store')->name('category');
+    Route::get('/delete/{id}', 'CategoryController@destroy')->name('category-destroy');
+});
+Route::prefix('mobile')->group(function () {
+    Route::get('/', 'MobileController@index')->name('mobile');
 });

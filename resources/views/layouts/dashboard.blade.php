@@ -26,17 +26,16 @@
             <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-chart-bar"></i>Relatórios</a>
         </div>
     </div>
-    {{--    alertas--}}
-    @component('components.alerts')
-        @endcomponent
+
 
     <!--CONTEUDO-->
     <div id="page-content-wrapper">
+
         <nav class="navbar navbar-expand-lg navbar-light" id="son-navbar">
                 <span id="menu-toggle" class="mr-auto">
                     <img src="/img/logo.png" alt="" class="mx-auto d-block">
                 </span>
-            <a href="/" class="navbar-brand" id="navbar-site-title">Painel</a>
+            <a href="{{route('mobile')}}" class="navbar-brand" id="navbar-site-title">Painel</a>
 
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#son-navbar-collapse"
                     aria-controls="son-navbar-collapse" aria-expanded="false" aria-label="Exibe toda a navbar">
@@ -79,6 +78,9 @@
             </div>
         </nav>
         <main class="container" id="content" >
+            {{--    alertas--}}
+            @component('components.alerts')
+            @endcomponent
             @yield('content')
         </main>
     </div>

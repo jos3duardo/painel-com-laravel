@@ -37,7 +37,7 @@
                         <td>{{$category->name}}</td>
                         <td  class="text-center">
                             <a href="" class="btn btn-sm btn-dark"> <i class="fas fa-pen-square"></i></a>
-                            <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                            <a href="{{route('category-destroy', ['id' => $category->id])}}" onclick="confirm('Deseja excluir #{{$category->name}} ?')" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
                 @endforeach
