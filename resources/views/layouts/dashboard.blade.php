@@ -36,7 +36,7 @@
                 <span id="menu-toggle" class="mr-auto">
                     <img src="/img/logo.png" alt="" class="mx-auto d-block">
                 </span>
-            <a href="#" class="navbar-brand" id="navbar-site-title">Painel</a>
+            <a href="/" class="navbar-brand" id="navbar-site-title">Painel</a>
 
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#son-navbar-collapse"
                     aria-controls="son-navbar-collapse" aria-expanded="false" aria-label="Exibe toda a navbar">
