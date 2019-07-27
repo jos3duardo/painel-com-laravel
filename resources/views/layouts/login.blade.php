@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>SISCOMPRAS</title>
+    <title>SISCOMPRA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
@@ -17,7 +17,7 @@
 <body class="text-center">
     <div class="container">
         <img class="mb-1" src="/img/logo.png" alt="" width="72" height="72">
-        <h1 class="mb-1 font-weight-normal"><b>Sis</b>Compras</h1>
+        <h1 class="mb-1 font-weight-normal"><b>Sis</b>Compra</h1>
 
         @yield('content')
 
@@ -25,7 +25,7 @@
             &copy; Todos os Direitos Reservados
             {{date('Y')}}
         </p>
-        <a href="http://jos3duardo.xyz" target="_blank">Siscompras || Jos3duardo</a>
+        <a href="http://jos3duardo.xyz" target="_blank">Siscompra || Jos3duardo</a>
     </div>
 
 </body>
