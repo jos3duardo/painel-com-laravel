@@ -14,7 +14,9 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <h2>Bem vindo ao sistema de gestão de estoque!</h2>
+                    <h4>Ainda estamos em construção, em breve termos novidades</h4>
+
                 </div>
             </div>
         </div>
