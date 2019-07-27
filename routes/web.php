@@ -13,3 +13,7 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::prefix('category')->group(function () {
+    Route::get('/', 'CategoryController@index')->name('category');
+    Route::post('/', 'CategoryController@store')->name('category');
+});

@@ -23,7 +23,7 @@ body{
 
 }
 #sidebar-wrapper .sidebar-heading{
-    padding: 0.93rem 1.25rem;
+    padding: 0.918rem 1.25rem;
     background-color: #262d37ff;
     color: #ffffff;
     font-size: 17px;
@@ -100,7 +100,6 @@ body{
     color: #000000;
     font-family: 'Nunito', sans-serif !important;
     font-size: 16px;
-
 }
 
 .son-form-field::placeholder {
@@ -153,3 +152,43 @@ body{
 #menu-toggle img{
     width: 30px;
 }
+/*************************************************/
+#content{
+    margin-top: 30px;
+}
+#son-main-text-3{
+    font-family: 'Nunito', sans-serif;
+    color: #262d37ff;
+    font-size: 30px;
+
+}
+.son-form{
+    border-radius: 9px !important;
+}
+
+.confirm-btns{
+    background-color: #f5f7faff;
+}
+
+.confirm-btns button{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold !important;
+    font-size: 14px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.son-form-body{
+    padding: 2%;
+}
+
+.btn {
+    border-radius: 9px !important;
+    border-width: 1px !important;
+}
+.form-group label{
+    font-size: 17px;
+    color: #a3a8aeff;
+}
+/************************************/
+

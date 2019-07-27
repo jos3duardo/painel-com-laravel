@@ -21,12 +21,14 @@
             <a href="/" class="list-group-item list-group-item-action"><i class="fas fa-home"></i>Inicio</a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-users"></i>Funcionários</a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-box-open"></i>Produtos</a>
-            <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-sitemap"></i>Categorias</a>
+            <a href="/category" class="list-group-item list-group-item-action"><i class="fas fa-sitemap"></i>Categorias</a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-people-carry"></i>Fornecedores</a>
             <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-chart-bar"></i>Relatórios</a>
         </div>
     </div>
-
+    {{--    alertas--}}
+    @component('components.alerts')
+        @endcomponent
 
     <!--CONTEUDO-->
     <div id="page-content-wrapper">
@@ -76,7 +78,7 @@
                 </ul>
             </div>
         </nav>
-        <main class="py-4">
+        <main class="container" id="content" >
             @yield('content')
         </main>
     </div>
