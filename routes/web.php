@@ -23,6 +23,7 @@ Route::prefix('products')->group(function () {
 Route::prefix('clients')->group(function () {
     Route::get('/', 'ClientsController@index')->name('clients');
     Route::get('/create', 'ClientsController@create')->name('client-add');
+    Route::post('/', 'ClientsController@store')->name('client');
     Route::get('/edit/{id}', 'ClientsController@edit')->name('client-edit');
     Route::post('/update/{id}', 'ClientsController@update')->name('client-up');
     Route::get('/delete/{id}', 'ClientsController@destroy')->name('client-destroy');

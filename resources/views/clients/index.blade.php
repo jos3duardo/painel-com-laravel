@@ -2,7 +2,7 @@
 @section('content')
 <!-- Button trigger modal -->
 <a href="{{route('home')}}" class="btn btn-dark">Inicio</a>
-<a href="{{route('client-add')}}" class="btn btn-dark">Cadastrar Fornecedor</a>
+<a href="{{route('client-add')}}" class="btn btn-dark">Cadastrar Cliente</a>
 <hr>
 
 <div class="card son-form">
