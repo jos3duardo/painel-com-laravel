@@ -105,6 +105,11 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
 }
+.son-form-field option {
+    color: #bacad6ff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
 
 #navbar-search-form{
     width: 350px;
