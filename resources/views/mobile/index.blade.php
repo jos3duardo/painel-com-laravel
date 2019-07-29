@@ -20,7 +20,7 @@
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <a href="#" class="btn btn-dark btn-lg btn-block  group-mobile"> <i class="fas fa-layer-group"></i> Estoque</a>
+            <a href="{{route('home')}}" class="btn btn-dark btn-lg btn-block  group-mobile"> <i class="fas fa-layer-group"></i> Estoque</a>
         </div>
         <div class="col-sm-6">
             <a href="{{route('clients')}}" class="btn btn-dark btn-lg btn-block  group-mobile"> <i class="fas fa-people-carry"></i> Clientes</a>
@@ -31,8 +31,7 @@
             <a href="#" class="btn btn-dark btn-lg btn-block  group-mobile"> <i class="fas fa-chart-bar"></i> Relatórios</a>
         </div>
         <div class="col-sm-6">
-            <a href="#" class="btn btn-dark btn-block btn-lg  group-mobile"> <i class="fas fa-users"></i> Funcionarios</a>
-
+            <a href="{{route('funcionarios')}}" class="btn btn-dark btn-block btn-lg  group-mobile"> <i class="fas fa-users"></i> Funcionarios</a>
         </div>
     </div>
 </div>

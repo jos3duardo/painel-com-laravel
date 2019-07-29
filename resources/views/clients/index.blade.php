@@ -23,7 +23,7 @@
                 <tr>
                     <td colspan="8" class="text-center">
                         <br>
-                        <h3> Nenhum produto cadastrado.</h3>
+                        <h3> Nenhum cliente cadastrado.</h3>
                     </td>
                 </tr>
             @else

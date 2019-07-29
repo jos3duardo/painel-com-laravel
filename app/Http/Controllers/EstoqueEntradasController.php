@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
+use App\EstoqueEntradas;
 use App\Products;
 use Illuminate\Http\Request;
 
-class ProductsController extends Controller
+class EstoqueEntradasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $products = Products::all();
-        $categories = Category::all();
-        return view('products.index', compact('products','categories'));
+        $movements = EstoqueEntradas::all();
+
+        return view('estoqueEntrada.index', compact('movements'));
     }
 
     /**
@@ -27,7 +27,10 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+//        $products = Products::all()->pluck('name', 'id');
+        $products = Products::all();
+//        dd($products);
+        return view('estoqueEntrada.create', compact('products'));
     }
 
     /**
@@ -38,14 +41,17 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        $product = new Products();
-        $product->name = $request->name;
-        $product->unidade = $request->unidade;
-        $product->category_id = $request->categoria;
-        $product->estoque = $request->estoque;
-        $product->valor = $request->valor;
+        $estoque = new EstoqueEntradas();
+        $estoque->quantidade = $request->quantity;
+        $estoque->product_id = $request->product_id;
+        $estoque->save();
+        $product = Products::find($estoque->product_id);
+        $product->estoque = $product->estoque + $estoque->quantidade;
         $product->save();
-        return redirect(route('products'));
+
+//        dd($product);
+
+        return redirect()->route('estoque-entrada');
     }
 
     /**
@@ -90,9 +96,6 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        $product = Products::find($id);
-        $product->delete();
-
-        return redirect(route('products'));
+        //
     }
 }

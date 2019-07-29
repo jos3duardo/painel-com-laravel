@@ -81,6 +81,10 @@
                                 </select>
                             </div>
                             <div class="form-group">
+                                <label for="name">Estoque</label>
+                                <input type="number" step="any" name="estoque" class="son-form-field form-control" placeholder="Estoque" autofocus required>
+                            </div>
+                            <div class="form-group">
                                 <label for="name">Valor</label>
                                 <input type="number" step="any" name="valor" class="son-form-field form-control" placeholder="Valor" autofocus required>
                             </div>

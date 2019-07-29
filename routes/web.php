@@ -3,6 +3,7 @@
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/funcionarios', 'HomeController@users')->name('funcionarios');
 
 Route::prefix('category')->group(function () {
     Route::get('/', 'CategoryController@index')->name('categories');
@@ -27,4 +28,16 @@ Route::prefix('clients')->group(function () {
     Route::get('/edit/{id}', 'ClientsController@edit')->name('client-edit');
     Route::post('/update/{id}', 'ClientsController@update')->name('client-up');
     Route::get('/delete/{id}', 'ClientsController@destroy')->name('client-destroy');
+});
+
+Route::prefix('estoque-entrada')->group(function () {
+    Route::get('/', 'EstoqueEntradasController@index')->name('estoque-entrada');
+    Route::post('/', 'EstoqueEntradasController@store')->name('estoque-entrada');
+    Route::get('/create', 'EstoqueEntradasController@create')->name('estoque-entrada-add');
+});
+
+Route::prefix('estoque-saida')->group(function () {
+    Route::get('/', 'EstoqueSaidasController@index')->name('estoque-saida');
+    Route::post('/', 'EstoqueSaidasController@store')->name('estoque-saida');
+    Route::get('/create', 'EstoqueSaidasController@create')->name('estoque-saida-add');
 });
