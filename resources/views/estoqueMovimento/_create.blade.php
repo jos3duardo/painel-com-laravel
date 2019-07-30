@@ -5,7 +5,8 @@
     </div>
     <div class="son-form-body form-group">
         <label for="product_id">Produto</label>
-        <select name="product_id" id="product_id" class="son-form-field form-control">
+        <select name="product_id" id="product_id" class="son-form-field form-control" required>
+            <option value="">Selecione</option>
             @foreach($products as $product)
                 <option value="{{$product->id}}">{{$product->name}}</option>
             @endforeach
