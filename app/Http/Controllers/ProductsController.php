@@ -67,7 +67,10 @@ class ProductsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = Products::find($id);
+        $categories = Category::all();
+
+        return view('products.edit', compact('product','categories'));
     }
 
     /**
@@ -79,7 +82,14 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $product = Products::find($id);
+        $product->name = $request->name;
+        $product->unidade = $request->unidade;
+        $product->category_id = $request->categoria;
+//        $product->estoque = $request->estoque;
+        $product->valor = $request->valor;
+        $product->save();
+        return redirect(route('products'));
     }
 
     /**

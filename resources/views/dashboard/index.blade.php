@@ -1,12 +1,12 @@
 @extends('layouts.dashboard')
 @section('content')
-<div class="container-fluid">
-<h1>Gestor de Estoque</h1>
+{{--<h1>Gestor de Estoque</h1>--}}
 
 <a href="{{route('home')}}" class="btn btn-dark">Inicio</a>
 <a href="{{route('estoque-entrada')}}" class="btn btn-dark">Entrada Estoque</a>
 <a href="{{route('estoque-saida')}}" class="btn btn-dark">Saida Estoque</a>
     <hr>
+<h5>Listagem de produtos</h5>
     <div class="card son-form">
         <div class="card-body">
             <table class="table table-sm table-bordered table-responsive">
@@ -35,7 +35,4 @@
             </table>
         </div>
     </div>
-
-
-</div>
 @endsection

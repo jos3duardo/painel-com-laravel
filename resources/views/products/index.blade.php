@@ -38,7 +38,7 @@
                         <td>{{$product->categoria->name}}</td>
                         <td>R$ {{number_format($product->valor, 2, ',','.') }}</td>
                         <td class="text-center">
-                            <a href="" class="btn btn-sm btn-dark"> <i class="fas fa-pen"></i></a>
+                            <a href="{{route('product-edit', ['id' => $product->id])}}" class="btn btn-sm btn-dark"> <i class="fas fa-pen"></i></a>
                             <a href="{{route('product-destroy', ['id' => $product->id])}}" onclick="confirm('Deseja excluir #{{$product->name}} ?')" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
                         </td>
                     </tr>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="form-group">
                             <button class="btn btn-dark"> Cadastrar</button>
-                            <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         </div>
                     </div>
                 </form>

@@ -3,6 +3,7 @@
 namespace App\Listeners;
 
 use App\Events\EntradaEstoqueCriada;
+use App\Products;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
@@ -19,8 +20,7 @@ class IncrementoEstoqueListener
     {
         //incremento da entrada
         $entrada = $event->getEntradas();
-        dd($entrada);
-        $product = $entrada->product_id;
+        $product = Products::find($entrada->product_id);
         $product->estoque = $product->estoque + $entrada->quantidade;
         $product->save();
     }

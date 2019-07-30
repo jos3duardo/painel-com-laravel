@@ -18,6 +18,8 @@ Route::prefix('mobile')->group(function () {
 Route::prefix('products')->group(function () {
     Route::get('/', 'ProductsController@index')->name('products');
     Route::post('/', 'ProductsController@store')->name('product');
+    Route::get('/edit/{id}', 'ProductsController@edit')->name('product-edit');
+    Route::post('/update/{id}', 'ProductsController@update')->name('product-up');
     Route::get('/delete/{id}', 'ProductsController@destroy')->name('product-destroy');
 });
 
