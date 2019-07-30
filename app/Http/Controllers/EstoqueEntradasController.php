@@ -45,9 +45,9 @@ class EstoqueEntradasController extends Controller
         $estoque->quantidade = $request->quantity;
         $estoque->product_id = $request->product_id;
         $estoque->save();
-//        $product = Products::find($estoque->product_id);
-//        $product->estoque = $product->estoque + $estoque->quantidade;
-//        $product->save();
+        $product = Products::find($estoque->product_id);
+        $product->estoque = $product->estoque + $estoque->quantidade;
+        $product->save();
 
 //        dd($product);
 
