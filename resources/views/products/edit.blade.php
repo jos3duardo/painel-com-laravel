@@ -31,7 +31,7 @@
 {{--                </div>--}}
                 <div class="form-group">
                     <label for="name">Valor</label>
-                    <input type="number" step="any" name="valor" class="son-form-field form-control" placeholder="Valor" autofocus required>
+                    <input type="number" value="{{$product->valor}}" step="any" name="valor" class="son-form-field form-control" placeholder="Valor" autofocus required>
                 </div>
             </div>
             <div class="card-footer">

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e33a30d2-7e4f-48d4-b93f-e6e0aa9f5e2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/estoqueMovimento/_create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/estoqueMovimento/_create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/edit.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EstoqueEntradasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="115">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#40#64#0#PHP" expanded="true" />
               </folding>
@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/estoqueMovimento/_create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
@@ -84,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/products/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+            <state relative-caret-position="342">
+              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -197,18 +197,18 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/EstoqueSaidasController.php" />
         <option value="$PROJECT_DIR$/resources/views/components/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/mobile/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EstoqueEntradasController.php" />
         <option value="$PROJECT_DIR$/app/Listeners/IncrementoEstoqueListener.php" />
         <option value="$PROJECT_DIR$/resources/views/funcionarios/users.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/products/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/products/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/resources/views/products/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/estoqueMovimento/_index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/estoqueMovimento/_create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EstoqueEntradasController.php" />
+        <option value="$PROJECT_DIR$/resources/views/products/edit.blade.php" />
       </list>
     </option>
   </component>
@@ -507,7 +507,7 @@
       <workItem from="1564182353842" duration="67338000" />
       <workItem from="1564388783051" duration="9033000" />
       <workItem from="1564442233603" duration="8727000" />
-      <workItem from="1564524709756" duration="240000" />
+      <workItem from="1564524709756" duration="535000" />
     </task>
     <task id="LOCAL-00001" summary="subindo projeto com a tela de login criada">
       <created>1564189701451</created>
@@ -677,11 +677,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564451043892</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="modficando input select">
+      <created>1564524977092</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1564524977092</updated>
+    </task>
+    <task id="LOCAL-00026" summary="entradas de estoque pelo controller">
+      <created>1564525099266</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1564525099266</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88596000" />
+    <option name="totallyTimeSpent" value="88891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="734" extended-state="6" />
@@ -735,7 +749,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="subindo projeto com a tela de login criada" />
     <MESSAGE value="enviando o .env" />
     <MESSAGE value="mudando dizeres login" />
     <MESSAGE value="redirecionando usuarios para tela de login ao fazer logof" />
@@ -759,7 +772,9 @@
     <MESSAGE value="correção de rota para criação de novo cliente" />
     <MESSAGE value="sistema de gestão de estoque finalizado, falta implementar eventos e filas" />
     <MESSAGE value="listagem de produtos" />
-    <option name="LAST_COMMIT_MESSAGE" value="listagem de produtos" />
+    <MESSAGE value="modficando input select" />
+    <MESSAGE value="entradas de estoque pelo controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="entradas de estoque pelo controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1142,16 +1157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EstoqueEntradasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="e#40#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -1166,13 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="52" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/products/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1208,6 +1206,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EstoqueEntradasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/products/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
         </state>
       </provider>
     </entry>
