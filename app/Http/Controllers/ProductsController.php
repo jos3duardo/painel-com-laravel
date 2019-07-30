@@ -82,12 +82,13 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $valorNew = str_replace(',', '',$request->valor);
         $product = Products::find($id);
         $product->name = $request->name;
         $product->unidade = $request->unidade;
         $product->category_id = $request->categoria;
 //        $product->estoque = $request->estoque;
-        $product->valor = $request->valor;
+        $product->valor = $valorNew;
         $product->save();
         return redirect(route('products'));
     }
