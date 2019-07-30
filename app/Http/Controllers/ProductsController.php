@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\EstoqueEntradas;
+use App\EstoqueSaidas;
 use App\Products;
 use Illuminate\Http\Request;
 
@@ -45,7 +47,7 @@ class ProductsController extends Controller
         $product->estoque = $request->estoque;
         $product->valor = $request->valor;
         $product->save();
-        return redirect(route('products'));
+        return redirect(route('products'))->with('status','Produto criado!');
     }
 
     /**
@@ -90,7 +92,7 @@ class ProductsController extends Controller
 //        $product->estoque = $request->estoque;
         $product->valor = $valorNew;
         $product->save();
-        return redirect(route('products'));
+        return redirect(route('products'))->with('status','Produto editado!');
     }
 
     /**
@@ -102,8 +104,20 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         $product = Products::find($id);
+        $estoqueEntrada = EstoqueEntradas::where([
+           'product_id' => $product->id
+        ])->first();
+
+        $estoqueSaida = EstoqueSaidas::where([
+            'product_id' => $product->id
+        ])->first();
+
+        if(isset($estoqueEntrada) || isset($estoqueSaida)){
+            return redirect(route('products'))->with('warning', 'Existe movimentação de estoque para este produto, ele não pode ser excluido!');
+        }
+
         $product->delete();
 
-        return redirect(route('products'));
+        return redirect(route('products'))->with('error','Produto apagado!');
     }
 }

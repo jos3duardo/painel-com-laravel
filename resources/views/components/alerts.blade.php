@@ -18,6 +18,11 @@
         <h4>{{ session('success') }}</h4>
     </div>
 @endif
+@if (session('warning'))
+    <div class="alert alert-warning" role="alert">
+        <h4>{{ session('warning') }}</h4>
+    </div>
+@endif
 @if (session('error'))
     <div class="alert alert-danger" role="alert">
         <h4>{{ session('error') }}</h4>

@@ -41,17 +41,17 @@ class EstoqueEntradasController extends Controller
      */
     public function store(Request $request)
     {
+
         $estoque = new EstoqueEntradas();
         $estoque->quantidade = $request->quantity;
         $estoque->product_id = $request->product_id;
-        $estoque->save();
-        $product = Products::find($estoque->product_id);
-        $product->estoque = $product->estoque + $estoque->quantidade;
-        $product->save();
-
-//        dd($product);
-
-        return redirect()->route('estoque-entrada');
+        if($estoque->save()){
+            $product = Products::find($estoque->product_id);
+            $product->estoque = $product->estoque + $estoque->quantidade;
+            $product->save();
+            return redirect()->route('estoque-entrada')->with('success','Entrada de estoque registrada!');
+        }
+        return redirect()->route('estoque-entrada')->with('error','Entrada de estoque não pode ser registrada!');
     }
 
     /**

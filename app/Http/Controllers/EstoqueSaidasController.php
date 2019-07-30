@@ -42,12 +42,13 @@ class EstoqueSaidasController extends Controller
         $estoque = new EstoqueSaidas();
         $estoque->quantidade = $request->quantity;
         $estoque->product_id = $request->product_id;
-        $estoque->save();
-        $product = Products::find($estoque->product_id);
-        $product->estoque = $product->estoque - $estoque->quantidade;
-        $product->save();
-
-        return redirect()->route('estoque-saida');
+        if($estoque->save()){
+            $product = Products::find($estoque->product_id);
+            $product->estoque = $product->estoque - $estoque->quantidade;
+            $product->save();
+            return redirect()->route('estoque-saida')->with('success','Saida de estoque registrada!');
+        }
+        return redirect()->route('estoque-saida')->with('error','Saida de estoque não pode ser registrada!');
     }
 
     /**
