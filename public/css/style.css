@@ -23,7 +23,7 @@ body{
 
 }
 #sidebar-wrapper .sidebar-heading{
-    padding: 0.918rem 1.25rem;
+    padding: 1.1rem 1.25rem;
     background-color: #262d37ff;
     color: #ffffff;
     font-size: 17px;
@@ -53,6 +53,17 @@ body{
     color: #ffffff;
 
 }
+
+.sub-menu a {
+ background-color: #7a8991 !important;
+ color: #000 !important;
+}
+
+.sub-menu a:hover {
+    background-color: #9d9d9d !important;
+    color: #000 !important;
+}
+
 
 #sidebar-wrapper .list-group i{
     padding-right: 5.5%;
@@ -153,7 +164,7 @@ body{
 }
 
 #menu-toggle img{
-    width: 30px;
+    width: 35px;
 }
 /*************************************************/
 #content{

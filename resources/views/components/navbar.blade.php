@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light" id="son-navbar">
-                <span id="menu-toggle" class="mr-auto">
-                    <img src="/img/logo.png" alt="" class="mx-auto d-block">
-                </span>
+    <span id="menu-toggle" class="mr-auto">
+        <img src="/img/logo.png" alt="" class="mx-auto d-block">
+    </span>
     <a href="{{route('mobile')}}" class="navbar-brand" id="navbar-site-title">Painel</a>
 
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#son-navbar-collapse"

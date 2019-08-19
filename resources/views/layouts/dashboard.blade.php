@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <!-- Charts JS-->
+    <script src="{{asset('js/Chart.min.js')}}"></script>
+
 </head>
 <body>
 <div class="d-flex" id="wrapper">
@@ -38,6 +41,8 @@
 <!-- JS DO BOOTSTRAP-->
 <script src="{{asset('js/bootstrap.min.js')}}"></script>
 <script src="{{asset('js/funcoes.js')}}"></script>
+
+
 <script>
     $("#menu-toggle").click(function(event){
         event.preventDefault();

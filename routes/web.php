@@ -21,6 +21,11 @@ Route::prefix('products')->group(function () {
     Route::get('/edit/{id}', 'ProductsController@edit')->name('product-edit');
     Route::post('/update/{id}', 'ProductsController@update')->name('product-up');
     Route::get('/delete/{id}', 'ProductsController@destroy')->name('product-destroy');
+    Route::get('/relatorio', 'ProductsController@relatorioGrafico')->name('product-relatorio');
+});
+
+Route::prefix('graficos')->group(function () {
+    Route::get('/', 'ProductsController@relatorio')->name('relatorio');
 });
 
 Route::prefix('clients')->group(function () {

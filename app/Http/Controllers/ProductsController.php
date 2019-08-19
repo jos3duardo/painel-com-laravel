@@ -120,4 +120,29 @@ class ProductsController extends Controller
 
         return redirect(route('products'))->with('error','Produto apagado!');
     }
+
+//    public function relatorioGrafico(){
+    public function relatorio(){
+        $products = Products::all();
+        $nome = array();
+        $estoque = array();
+        foreach ($products as $key => $product){
+            $nome[$key] = $product->name;
+            $estoque[$key] = $product->estoque;
+        }
+//    dd($nome,$quantidade);
+        $produtos['nome'] = $nome;
+        $produtos['estoque'] = $estoque;
+
+        return view('graficos.index', compact('produtos','nome','estoque'));
+
+//        return $produtos;
+    }
+
+//    public function relatorio(){
+//        $products = Products::all();
+//        $productsJson = json_decode($products);
+//        return view('graficos.index', compact('productsJson'));
+//
+//    }
 }
