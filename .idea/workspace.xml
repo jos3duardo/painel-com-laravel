@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e33a30d2-7e4f-48d4-b93f-e6e0aa9f5e2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/Chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/graficos/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +40,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
@@ -142,10 +134,6 @@
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="912" />
-    <option name="height" value="725" />
-  </component>
   <component name="ProjectId" id="1PYHkxiVmO0y7EtDXqbAunCGDTv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -225,6 +213,7 @@
       <workItem from="1565148844122" duration="398000" />
       <workItem from="1565221629985" duration="614000" />
       <workItem from="1566044258687" duration="4741000" />
+      <workItem from="1566257920097" duration="2342000" />
     </task>
     <task id="LOCAL-00001" summary="subindo projeto com a tela de login criada">
       <created>1564189701451</created>
@@ -443,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564527702221</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="melhoria no sidebar">
+      <created>1566258026092</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1566258026094</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,14 +450,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="subindo arquivo css e js" />
     <MESSAGE value="subindo logo" />
     <MESSAGE value="configurando telas de login e register para deixar responsivo" />
     <MESSAGE value="ajustes no css do login e cadastrar-se" />
@@ -486,7 +483,8 @@
     <MESSAGE value="correção de entrada para o valor do campo" />
     <MESSAGE value="correção do ponto" />
     <MESSAGE value="mensagem apos ação" />
-    <option name="LAST_COMMIT_MESSAGE" value="mensagem apos ação" />
+    <MESSAGE value="melhoria no sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="melhoria no sidebar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

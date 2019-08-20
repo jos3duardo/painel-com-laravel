@@ -15,7 +15,7 @@
 </head>
 <body class="text-center">
     <div class="container">
-        <img class="mb-1" src="/img/logo.jpg" alt="" width="72" height="72">
+        <img class="mb-1" src="/img/logo.png" alt="" width="72" height="72">
         <div style="font-size: 43px"><b>Sis</b>Compra <small style="font-size: 16px">{{env('APP_VERSION')}}</small></div>
         @yield('content')
         <p class="mt-3 mb-1 text-muted">
